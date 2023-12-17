@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+}
+body{
+    background-color: rgb(27, 27, 27);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.header .menu{
+    display: flex;
+    justify-content: space-between;
+}
+.header .menu a{
+    margin: 0 50px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.678);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+.header .menu a:hover{
+    color: white;
+    background-image: url(img/bg-menu.png);
+}
+.header .menu-2{
+    display: none;
+}
+
+#section-one{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    overflow: hidden;
+}
+#section-one .circle{
+    position: absolute;
+    top: -200px;
+    left: -210px;
+    z-index: -1;
+}
+#section-one .me{
+    color: white;
+}
+#section-one .me h2{
+    font-size: 50px;
+}
+#section-one .me .warna{
+    animation: warna 10s  infinite;
+}
+@keyframes warna{
+    0%{color: rgb(123, 255, 62);}
+    50%{color: white;}
+    100%{color: rgb(123, 255, 62);}
+}
+#section-one .me h1{
+    font-size: 75px;
+}
+#section-one .me h3{
+    margin-top: 40px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.678);
+}
+#section-one .me .resume{
+    margin-top: 50px;
+    width: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#section-one .me .resume a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#section-one .me a i{
+    margin-left: 15px;
+}
+#section-one .me a:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+#section-one .image{
+    display: flex;
+    align-items: center;
+}
+#section-one .image .medsos{
+    display: flex;
+    flex-direction: column;
+}
+#section-one .image .medsos a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    border: 1px solid white;
+    width: fit-content;
+    display: flex;
+    text-align: center;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: rgb(27, 27, 27);
+}
+#section-one .image .medsos a:hover{
+    background-color: white;
+    color: black;
+}
+#section-one .image .medsos a:nth-child(2), a:nth-child(3){
+    margin: 45px 80px;
+}
+#section-one .image .circel-medsos{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    top: 60px;
+    right: 90px;
+    z-index: -1;
+    animation: medsos 20s infinite;
+}
+@keyframes medsos {
+    0%{border-right: 2px solid rgb(123, 255, 62);}
+    20%{border-right: 2px solid rgb(123, 255, 62);}
+    40%{border-right: 2px solid rgb(66, 216, 253);}
+    60%{border-right: 2px solid rgb(66, 216, 253);}
+    80%{border-right: 2px solid rgb(255, 255, 255);}
+    100%{border-right: 2px solid rgb(255, 255, 255);}
+}
+
+#secon-section{
+    /* height: 130vh; */
+    background-color: rgb(39, 39, 39);
+    padding: 50px 100px;
+    overflow: hidden;
+}
+#secon-section .heading{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#secon-section .two-skil{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+#secon-section .two-skil .skil .development{
+    background-color: rgb(32, 32, 32);
+    padding: 40px 90px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#secon-section .skil .development h1{
+    margin: 30px 0;
+}
+#secon-section .skil .development .span{
+    display: flex;
+    flex-direction: column;
+}
+#secon-section .skil .development .span span{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    color: white;
+}
+#secon-section .skil .development .span span i, #secon-section .skil .development .span svg,
+#secon-section .skil .development .span img{
+    margin-right: 10px;
+}
+#secon-section .skil-hard .about{
+    background-color: rgb(32, 32, 32);
+    width: 700px;
+    padding: 20px 40px;
+    color: white;
+    margin: 20px 0;
+    
+}
+#secon-section .skil-hard .about p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+
+#section-three{
+    background-color: rgb(27, 27, 27);
+    padding: 30px 20px;
+}
+#section-three h1{
+    font-size: 40px;
+}
+#section-three .container{
+    padding: 50px 20px;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+}
+#section-three .container .box{
+    background-color: rgba(255, 255, 255, 0.164);
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+}
+#section-three .container .box h2{
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+#section-three .container .box img{
+    margin-bottom: 10px;
+}
+#section-three .container .box a{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.534);
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+#section-three .container .box p{
+    margin-top: 5px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.918);
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 700px) {
+    .header{
+        padding: 20px;
+        position: relative;
+    }
+    .header .menu{
+        display: none;
+    }
+    .togel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+    .togel span{
+        background-color: white;
+        width: 30px;
+        height: 3px;
+        margin: 3px;
+    }
+    .menu-2{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        width: 200px;
+        right: 10px;
+        top: 50px;
+        padding: 20px 0;
+        text-align: center;
+        justify-content: center;
+        border-radius: 2px;
+        display: none;
+        align-items: center;
+    }
+    .menu-2 a{
+        margin: 15px 10px;
+        color: white;
+        text-decoration: none;
+    }
+    .menu-2 span{
+        margin-top: 20px;
+        background-color: red;
+        padding: 5px;
+        width: 30px;
+        cursor: pointer;
+    }
+    #section-one{
+        flex-direction: column;
+    }
+    #section-one .circle{
+        top: -270px;
+    }
+    #section-one .me{
+        margin-top: 40px;
+    }
+    #section-one .image{
+        width: 200px;
+    }
+    #section-one .image .circel-medsos{
+        width: 250px;
+        height: 270px;
+        right: -55px;
+        top: 20px;
+    }
+    #section-one .image .medsos a:nth-child(2), a:nth-child(3){
+        margin: 20px 50px;
+    }
+    #secon-section{
+        padding: 30px 15px;
+    }
+    #secon-section .heading h1{
+        font-size: 35px;
+    }
+    #secon-section .two-skil{
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #secon-section .two-skil .about{
+        width: 100%;
+    }
+    #section-three h1{
+        font-size: 30px;
+    }
+}
